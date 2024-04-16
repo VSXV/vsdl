@@ -9,7 +9,7 @@ import numpy as np
 
 from vsdl.tensor import Tensor
 
-Batch = NamedTuple("Batch", [('imputs', Tensor), ('targets', Tensor)])
+Batch = NamedTuple("Batch", [('inputs', Tensor), ('targets', Tensor)])
 
 class DataIterator:
     def __call__(self, inputs: Tensor, Target: Tensor) -> Iterator:
